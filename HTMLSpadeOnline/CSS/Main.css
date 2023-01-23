@@ -1,0 +1,647 @@
+@import url(https://webcdn.triongames.com/common-fonts/alice/alice.css);
+@import url(https://webcdn.triongames.com/common-fonts/notosans/notosans.css);
+@font-face {
+    font-family: spadeFont;
+    src: url(../BreatheFireIii-PKLOB.ttf);
+}
+
+*{
+    font-family: spadeFont;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body {
+    /* font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; */
+    /* font: 400 22px/40px 'Alice',Helvetica,Arial,sans-serif; */
+   
+    /* background-attachment: fixed; */
+    
+}
+
+.bgImage img{
+    background-image: url(../Images/Fiestabg1.png);
+    position: fixed;
+    background-repeat: no-repeat;
+    justify-content: flex;
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -2;
+    
+    /* width: 100%;
+    height: 100%; */
+}
+.NavBar{
+    /* max-width: 1920px; */
+    z-index: 1;
+    margin-left: auto;
+    margin-right: auto;
+    /* width: 100%; */
+    background: url(../Images/navbarbg.png) no-repeat;
+    position: fixed;
+    background-size: cover;
+    height: 60px;
+    width: 100%;
+    top: 0px;
+}
+
+.dropdown {
+    /* float: right; */
+    overflow: hidden;
+    border-radius: 3px;
+    
+    color: white;
+}
+
+.dropdown .dropbtn {
+    /* font-size: 16px; */
+
+    border: none;
+    outline: none;
+    color: white;
+    /* padding: 14px 16px; */
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+  }
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    border-radius: 3px;
+    z-index: 1
+}
+
+
+.dropdown:hover .dropdown-content {
+    border-radius: 3px;
+    display: block;
+}
+
+.dropdown-content a {
+    /* float: none; */
+    /* color: black; */
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    /* text-align: left; */
+  }
+
+div.SpadeLogo {
+    background: url(../images/logoWhite.png) no-repeat center center / contain;
+    float: left;
+    width: 300px;
+    padding-bottom: 60px;
+    position: relative;
+    left: 10px;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    padding-top: 20px;
+    /* line-height: 40px; */
+    margin: 0 5px;
+    text-transform: uppercase;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+}
+
+a.activeNav, a:hover {
+    background: #8e8f9b;
+    transition: .5s;
+}
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+@media (max-width: 952px) {
+    div.SpadeLogo {
+        font-size: 30px;
+        padding-left: 50px;
+    }
+
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1000px) {
+    
+    .checkbtn {
+        display: block;
+    }
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #010b14;
+        top: 60px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px
+    }
+
+    .dropdown-content {
+        width: 100%;
+    }
+
+    .dropdown-content a{
+        text-align: center;
+    }
+
+    nav ul li a{
+        font-size: 20px;
+    }
+    a:hover,a.activeNav{
+        background: none;
+        color: #0082e6;
+    }
+
+    #check:checked ~ ul {
+        left: 0;
+    }
+}
+
+.SectionTitle{
+    padding-top: 20px;
+    padding-bottom: 0px;
+
+    font-size: 100px;
+    color: white;
+    text-align: center;
+}
+.SDLSectionSpade{
+    padding-top: 100px;
+}
+
+.DlSection {
+    /* margin: 0; */
+    max-width: 1920px;
+    max-height: 850px;
+    /* border:10px solid grey; */
+    text-align: center;
+    background: url(../Images/newdownload.png) no-repeat; 
+    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    object-fit: cover;
+    /* height: 100%; */
+    padding-bottom: 1500px;
+     /* background-size: auto; */
+    height: calc(100vh - 80px); 
+    
+}
+
+.DlBtnContainer {
+    /* border: 10px solid blue; */
+    max-width: 700px;
+    width: 100%;
+    margin: auto;
+    height: 50vh;
+    /* display: block; */
+    align-items:center;
+    justify-content: center;
+    
+    
+}
+.DlBtnContainer img {
+    /* text-align: center; */
+    
+    width: 300px;
+    height: 200px;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    top: 300px;
+
+     /* position: absolute;
+    top: 50%;
+    width: 10%; 
+    transform: translate(-50, -50); */
+    
+    /* position:relative;  */
+    
+    /* width: 10%;
+    text-align: center;
+    height: auto;
+    position: absolute;
+    bottom: 300px;
+    padding-bottom: 60px; */ 
+}
+
+.DlBtnContainer img:hover {
+    cursor: pointer;
+    transform: scale(.95);
+}
+
+.DownloadText {
+    position: relative;
+    top: 300px;
+    padding-bottom: 25px;
+    color: white;
+    /* text-align: center; */
+    /* left: 250px; */
+    font-size: 64px;
+}
+.DownloadText2 {
+    position: relative;
+    top: 300px;
+    /* padding-bottom: 25px; */
+    
+    color: white;
+    /* left: 250px; */
+    font-size: 38px;
+}
+.DownloadText1 {
+    position: relative;
+    top: 300px;
+    padding-bottom: 25px;
+    color: white;
+    /* left: 250px; */
+    font-size: 24px;
+}
+
+section.AboutSection {
+    /* margin: 0; */
+    max-width: 1920px;
+    max-height: 680px;
+
+    background: url(../Images/godscythe2.png) no-repeat; 
+    padding-bottom: 1200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    object-fit: cover;
+    /* height: 100%; */
+   
+     /* background-size: auto; */
+    height: 100vmax;
+    
+}
+.AboutContent{
+    
+    display: table;
+    border-collapse: separate;
+    border-spacing: 1px;
+    margin-right:auto;
+
+    color: white;
+;
+    
+}
+.AboutList{
+    
+    display: table-row;
+    text-align: left;
+    font-size: 60px;
+}
+
+.AboutItems{
+    display:table-cell;
+    padding:30px;
+
+}
+
+.txtGap li{
+    margin-bottom: 25px;
+}
+.AboutList img{
+    transition: transform 0.1s ease;
+
+    max-width: 350px;
+    max-height: 350px;
+
+    border: 5px solid #f4eec0;
+    border-radius: 20px;
+}
+.AboutList img:hover{
+    transform : scale(1.1);
+}
+
+section.TrailerSection {
+    /* margin: 0; */
+    max-width: 1920px;
+    max-height: 850px;
+    /* border:10px solid grey; */
+    text-align: center;
+    /* background: url(../Images/godscythe2.png) no-repeat;  */
+    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    object-fit: cover;
+    padding-bottom: 1200px;
+    
+    /* height: 100%; */
+    /* background-size: auto; */
+    height: calc(100vh - 80px);
+}
+div.TrailerContent {
+    font-size: 36px;
+    /* color: white; */
+    /* top: 100px; */
+}
+
+nav ul li a{
+    color: white;
+    font-size: 17px;
+}
+
+html, body {
+    scroll-behavior: smooth;;
+    display: block;
+    /* background: url(../Images/FiestaSlowBG.png);
+    background-repeat: no-repeat;
+    background-color: grey; 
+    background-size: 100%; */
+	/* background-color: #111 !important; */
+}
+
+.parallax {
+    height: 100vh;
+    margin-top: 50px;
+    /* overflow-y:auto;
+    overflow-x:hidden; */
+    perspective: 10px;
+}
+
+header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30%;
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+
+.backGroundImage {
+    margin-top: 500px;
+    transform: translateZ(-30px) scale(5.5);
+}
+
+
+.backGroundImage2 {
+    padding-top: 1900px;
+    max-width: 1920px; 
+    transform: translateZ(-30px) scale(5.5);
+
+    /* background-; */
+    /* z-index: -5; */
+    /* transform: translateZ(-30px) scale(5.5); */
+}
+/* .backGroundImage .foreground {
+
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+} */
+
+@media only screen and (max-device-width:1366px) {
+    .parallax{
+        background-attachment: scroll;
+    }
+}
+
+  .background-element {
+    -webkit-transform: translateZ(-999px) scale(2);
+    transform: translateZ(-999px) scale(2);
+    z-index: 3;
+  }
+
+.outer-wrap {
+    background: #303030;
+    outline: 1px solid #444;
+    width: 633px;
+    height: 677px;
+    margin: 100px auto;
+    color: white;
+}
+
+.outer-wrap .errorBox {
+    background-color: #DC143C;
+    width: 300px;
+    color: white;
+    margin: 20px auto;
+    text-align: left;
+    padding: 15px 20px 15px 20px;
+    font-family: 'OpenSansSemibold';
+}
+
+.success {
+    background-color: #4BB543 !important;
+}
+
+.outer-wrap .inner-wrap {
+	margin: 30px auto 0 auto;
+	width: 345px;
+	font-family: 'OpenSansSemibold';
+	font-size: 14px;
+	text-align: center;
+}
+
+.outer-wrap .inner-wrap .register {
+	background: #444;
+	border-color: #111;
+    border-radius: 0;
+	color: #fff !important;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.03);
+	text-align: center;
+	width: 100%;
+	height: 38px;
+	font-family: 'OpenSansbold';
+	text-transform: uppercase;
+	font-size: 16px;
+	margin-top: 10px;
+}
+
+.outer-wrap .inner-wrap input {
+	width: 100%;
+	height: 38px;
+	margin-top: -10px;
+    margin-bottom: 10px;
+    background: #222;
+    border-radius: 0;
+    border: 1px solid #444;
+    outline: 0 !important;
+    box-shadow: inset 0 0 2px #000;
+    -webkit-box-shadow: inset 0 0 2px #000;
+    -moz-box-shadow: inset 0 0 2px #000;
+    color: white;
+}
+
+.outer-wrap .inner-wrap input:focus {
+    box-shadow: inset 0 1px 1px black;
+    -webkit-box-shadow: inset 0 1px 1px black;
+    -moz-box-shadow: inset 0 1px 1px black;
+}
+
+.outer-wrap .inner-wrap label {
+	margin-top: 5px;
+    margin-bottom: 0;
+}
+
+.outer-wrap .logo {
+	background: url(../images/logo.png) no-repeat center center / contain;
+    width: 500px;
+	height: 113px;
+    margin: 0 auto;
+}
+
+
+.outer-wrap h4 {
+	font-family: 'OpenSansSemiBold';
+	font-size: 20px;
+	text-align: center;
+}
+
+.outer-wrap h6 {
+	font-family: 'OpenSansItalic';
+	font-weight: normal;
+	
+	text-align: center;
+}
+
+@media(max-width: 768px) { 
+    .outer-wrap {
+        width: 450px;
+        margin: 100px auto;
+    }
+    
+    .outer-wrap .inner-wrap input {
+        width: 100%;
+        height: 38px;
+      
+    }
+
+    .outer-wrap .logo {
+        width: 400px;
+    }
+}
+
+.unselectable{
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
+
+.footer{
+    /* position: absolute;
+    top: 500px;
+    bottom: 0;
+    left: 0;
+    right: 0; */
+    background: #111;
+    height: auto;
+    width: 100vw;
+    padding-top: 200px;
+    color: #fff;
+    z-index: 1;
+}
+
+.footerContent{
+    background: #111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footerContent h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+    color: #8e8f9b;
+}
+.footerContent p{
+    max-width: 500px;
+    color: #fff;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+.socials li{
+    margin: 0 10px;
+}
+
+.socials a{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+.socials a i{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+}
+
+.socials a:hover i{
+    color: aqua;
+}
+
+.footerBottom{
+    background: #000;
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footerBottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.footerBottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}

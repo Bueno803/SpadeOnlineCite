@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+<!-- <link href="CSS/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
+
+<script src="CSS/JS/main.js"></script>
+<script src="css/js/bootstrap.min.js"></script>
+<script src="https://kit.fontawesome.com/433cd722ca.js" crossorigin="anonymous"></script>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'/>
+
+<title> Spade Online Home Page</title>
+<link rel="stylesheet" href="CSS/Main.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>	
+
+	
+    <nav class="NavBar">
+		<input type="checkbox" id="check">
+		<label for="check" class="checkbtn">
+			<i class="fa fa-bars" aria-hidden="true"></i>
+		</label>
+        <div class="SpadeLogo"> </div>
+			<ul>
+				<li><a class="activeNav" href="#">Home</a></li>
+				<li><a href="#ServerInfo">About</a></li>
+				<li><a href="https://linktr.ee/spadeonline">Download</a></li>
+				<li><a href="https://discord.gg/RgvYBFkcHU">Discord</a></li>
+				<li><a href="itemmall.php">Donate</a></li>
+				<!-- <?php if($isLoggedIn) { ?> 
+				<li>Hello, <?php echo $_SESSION['username'];} ?> </li>  -->
+				<?php if($isLoggedIn) { ?> <li class="dropdown"> 
+					<?php  echo  $_SESSION['username']; ?>
+
+
+				<!-- <li class="dropdown">Signed In -->
+					<button class="dropbtn"> 
+						<i class="fa fa-caret-down"></i>
+					</button>
+						<div class="dropdown-content">
+							<a href="#">profile</a>
+							<a href="logout.php">Logout</a>
+						</div> 
+				</li>
+				 <?php } if(!$isLoggedIn) { ?> 
+					<li><a href="signin.php">Login</a></li>
+					<li><a href="signup.php">Signup</a></li><?php } ?>
+			</ul>	
+    </nav>
+
+	<div class="bgImage">
+		<img src="Images/Fiestabg1.png">
+	</div>
+	
+		<!-- <header>
+			<img src="Images/fiestbg.png" class="backGroundImage">
+
+			
+			
+		</header>
+		
+		<header>
+			<img src="Images/secondbg.png" class="backGroundImage2">
+		</header> -->
+
+		<!-- <img src="Images/secondbg.png" class="backGroundImage" st> -->
+		<div class="SDLSectionSpade">
+			<section class="DlSection">
+
+				<div>
+					<!-- <h1 class="DownloadText">105 cap0</h1>
+					<h1 class="DownloadText1">105 Cap1</h1>
+					<h1 class="DownloadText2">105 Cap2</h1> -->
+					<div class="DlBtnContainer">
+					<!-- <h1 class="DownloadText">105 Cap Server!</h1> -->
+						<h1 class="DownloadText1">Online Balanced PvE/PvP Server with custom content</h1>
+						<h1 class="DownloadText2">Open Beta!</h1>
+						<a href="https://linktr.ee/spadeonline"><img src="Images/downloadbtn.png" /></a>
+					</div>
+
+				</div>
+			</section>
+		</div>
+
+		<section id="ServerInfo" class="AboutSection">
+            <h1 class="SectionTitle">Server Info </h1>
+            <div class="AboutContent">
+                <div class="AboutList">
+                    <ul class="AboutItems txtGap" style = "position:relative; top:-105px;">
+                        <li>• Level Cap 105</li>
+                        <li>• Custom Instances</li>
+                        <li>• Custom Raids</li>
+                        <li>• Custom Quests</li> 
+                    </ul>
+                    <ul class="AboutItems unselectable">
+                        <li><img src="MiniIM/Instance.png"></li>
+                        <li><img src="MiniIM/Raid.png"></li>
+                        
+                    </ul>
+                    <ul class="AboutItems unselectable">
+                        <li><img src="MiniIM/tree.png"></li>
+                        <li><img src="MiniIM/quest.png"></li>
+                    </ul>
+
+                </div>
+
+            </div>
+            
+        </section>
+
+		<section class="TrailerSection">
+			<div class="TrailerContent">
+				<h1 class="SectionTitle" style="padding-bottom: 60px;">Spade Online Trailer</h1>
+				<iframe width="1080" height="720" 
+					src="https://www.youtube.com/embed/n-dCBV4Soxo" title="YouTube video player" frameborder="0" 
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+				</iframe>
+			</div>
+		</section>
+
+	<footer>
+		<div class="footerContent">
+			<h3>Spade online</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+			<ul class="socials">
+				<li><a href="https://www.youtube.com/@commas4172"><i class="fa fa-youtube"></i></a></li>
+				<li><a href="https://discord.gg/RgvYBFkcHU"><i class="fa-brands fa-discord"></i></a></li>
+				<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+				<li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+			</ul>
+		</div>	
+		<div class="footerBottom">
+			<p>copyright &copy; 2023 Spade Online. designed by <span>Ace803</span></p>
+		</div>
+	</footer>
+	
+</body>
+
+
+
+</html>
+
+
